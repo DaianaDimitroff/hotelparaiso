@@ -14,6 +14,7 @@ a {
 }
 
 /* INDEX */
+
 header .navbar-collapse{
   justify-content: center;
 }
@@ -22,6 +23,7 @@ header .navbar-brand{
     font-weight: bold;
     font-size: 35px;
 }
+
 .nav-link{
   font-size: 23px;
 }
@@ -141,11 +143,25 @@ h1 {
   text-align: center;
 
 }
+.testimonios .col-md-4 img {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+.testimonios .card-header{
+  background-color: #fda94f;
 
-.testimonios .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+}
+.parrafotestimonio{
+  font-size: 19px;
+  color:#C65425;
+
+}
+.blockquote-footer{
+  color:#000;
+  font-size: 16px;
+  padding:10px;
 }
 
 .testimonios h2 {
@@ -238,12 +254,40 @@ h1 {
 
 /*NOSOTROS*/
 
+.bannerNosotros {
+    display: flex;
+    justify-content: center;
+    background-image: url(../imagenes/Nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  color:#f8870e;
+height: 200px;
+padding-top: 50px;
+  padding-bottom: 20px; }
 
-/*SERVICIOS*/
-serviciostitu{
-  display: flex;
+.TextoNosotros .p{
+  font-size: 17px;
+  color: #f8870e;
 }
 
+/*SERVICIOS*/
+.bannerServicios {
+  display: flex;
+  justify-content: center;
+  background-image: url(../imagenes/fabio-fistarol-qai_Clhyq0s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  color:#f8870e;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.productos h3 {
+  text-align: center;
+  color: #f8870e;
+}
 
 /*HABITACIONES*/
 #gridHabitaciones {
@@ -293,45 +337,14 @@ serviciostitu{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 250px;
-}
-
-.bannerHabitaciones {
-  font-size: 40px;
-  color: #EFEEEA;
-  text-transform: uppercase;
-  padding-top: 70px;
+  height: 200px;
+  color:#f8870e;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
-
-.h3,
-.h3Centrado {
-  font-family: "Montserrat Alternates", sans-serif;
-  color: #2F2A26;
-  font-weight: 400;
-}
-
-.h3::selection,
-.h3Centrado::selection {
-  background-color: #e99b52;
-}
-
-.h3Centrado {
+.descripcion {
   text-align: center;
-}
-
-.h3Centrado::selection {
-  background-color: #e99b52;
-}
-
-.texto2 {
-  font-family: "Poppins", sans-serif;
-  color: #2F2A26;
-}
-
-.texto2::selection {
-  background-color: #DBC9B8;
-}
+  text-justify: center; }
 
 
 .habitacion1,
@@ -392,6 +405,18 @@ serviciostitu{
 }
 
 /*CONTACTOS*/
+.bannerContacto {
+  display: flex;
+  justify-content: center;
+  background-image: url(../imagenes/jason-briscoe--eLfQTmDfLk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  color:#f8870e;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
 .container {
   max-width: 1170px;
   margin-left: auto;
@@ -404,10 +429,7 @@ ul {
   padding: 0;
 }
 
-.logo {
-  text-align: center;
-  font-size: 3em;
-}
+
 
 .contacto .container {
   display: grid;

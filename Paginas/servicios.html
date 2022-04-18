@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!-- animaciones -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+         <script scr="js/wow.min.js"></script>
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- BOOSTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -25,7 +30,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Hotel Paraiso</a>
+              <a class="navbar-brand animate__animated animate__rubberBand" href="../index.html">Hotel Paraiso</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -52,37 +57,50 @@
           </nav>
     </header>
 
+<main>
+  <h1 class="bannerServicios wow animate__animated animate__fadeInDown"> Servicios</h1>
+  <section class="servicios">
+    
+    <div class="container contenedor">
 
-    <section class="servicios">
-        <div class="container">
-            <h1 class="serviciostitu">Nuestros Servicios</h1>
-            <section class="servicios-hotel">
-
-
-                <p> Los servicios adicionales que se ofrecen en el hotel dependen principalmente de su categoría.
-                    Estos
-                    servicios incluyen: piscinas, saunas, salas de fitness, gimnasios, almacenamiento de equipaje,
-                    almacenamiento de equipo recreativo,
-                    salas de conferencias, guías turísticos, aparcamiento gratuito así como servicio de planchado.
-                </p>
-
-
-
-                <section>
-                    <div class="fotoservicios">
-                        <h1> Servicio incorporado recientemente</h1>
-                        <p> Nuestro bar cuenta con excelentes cócteles y su amplia carta de vinos. El espacio es
-                            elegante y
-                            atractivo, con algunas mesas y sofás, y un bar iluminado con taburetes.</p>
-                        <img src="../imagenes/pubstragos.jpg" alt="imagentragos">
-                        <img src="../imagenes/serviciodetragosplaya.jpg" alt="imagenserviciomozo">
-                    </div>
-                </section>
-
-
-            </section>
-
-            <footer class="footer">
+      <article class="Restaurant izquierda">
+        <article class="row align-items-center shadow p-3 mb-5 bg-white rounded justify-content-center">
+          <div class="col-md-7">
+            <h3>Restaurant</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="marcas">
+              <img class="col-md-7" src="../imagenes/mesa.jpg"    alt="Restaurant">
+   </div>
+</article>
+<article class=" Piletas derecha">
+  <div class="row align-items-center shadow p-3 mb-5 bg-white rounded justify-content-center">
+    <div class="col-md-7 order-md-2">
+      <h3>Piletas</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores voluptatibus eos aperiam, dolores facere sit fugiat alias sed doloribus ab qui esse vitae debitis itaque blanditiis ut nisi. Corporis, expedita..</p>
+      <div class="marcas">
+        <img class="col-md-7" src="../imagenes/imagenprincipalindex.jpg"    alt="Restaurant">
+    </div>
+    </article>
+      <article class="Limpieza izquierda">
+        <div class="row align-items-center shadow p-3 mb-5 bg-white rounded justify-content-center">
+          <div class="col-md-7">
+            <h3>Limpieza</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, provident. Ut sed hic veritatis reiciendis provident facilis placeat eaque magni odio ex laborum totam ipsum atque, beatae dolores sequi. Fugiat? </p>
+            <div class="marcas">
+              <img class="col-md-7" src="../imagenes/serviciodelimpieza.jpg"    alt="Restaurant">
+          </div>
+    </article>
+    <article class="Gimnasio derecha">
+      <div class="row align-items-center shadow p-3 mb-5 bg-white rounded justify-content-center">
+        <div class="col-md-7 order-md-2">
+          <h3>Gimnasio</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde illum quaerat! In laudantium tempora facilis nemo praesentium soluta delectus provident sapiente aliquid.</p>
+          <div class="marcas">
+            <img class="col-md-7" src="../imagenes/serviciogimnasio.jpg"    alt="Restaurant">
+        </div>
+        </article>
+      
+      <footer class="footer">
                 <div class="container">
                     <div class="redes-sociales">
                         <h4>Seguinos en nuestras redes</h4>
