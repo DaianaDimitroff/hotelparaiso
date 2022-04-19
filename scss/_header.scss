@@ -1,0 +1,30 @@
+/* Header  */
+header {
+    background-color: #C65425, ;
+
+    .navbar {
+        width: 100%;
+
+        .navbar-collapse {
+            justify-content: center;
+        }
+
+        .navbar-brand {
+            color: $colorPrincipal!important;
+            font-weight: bold;
+            font-size: 30px;
+            display: flex;
+            padding-left: 20px;
+        }
+
+        .nav-link {
+            color: #C65425;
+            font-size: 23px;
+
+            &:hover {
+                color: #fda94f !important;
+            }
+        }
+
+    }
+}

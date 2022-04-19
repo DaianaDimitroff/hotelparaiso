@@ -13,25 +13,40 @@ a {
   color: #000;
 }
 
-/* INDEX */
+/* Header  */
+header {
+  background-color: #C65425,;
+}
+header .navbar {
+  width: 100%;
+}
 
-header .navbar-collapse{
+header .navbar-collapse {
   justify-content: center;
 }
-header .navbar-brand{
-  color: #fda94f!important;
-    font-weight: bold;
-    font-size: 35px;
+
+header .navbar-brand {
+  color: #fda94f !important;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  padding-left: 20px;
 }
 
-.nav-link{
+.navbar-nav .nav-item .nav-link {
+  color: #C65425;
+}
+
+.nav-item .nav-link {
   font-size: 23px;
 }
+
 .navbar-nav .nav-link:hover {
-  color: #fda94f!important;
+  color: #fda94f !important;
 }
 
 
+/* INDEX  */
 .bienvenida {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../imagenes/imagenprincipalindex.jpg") center/cover no-repeat;
   background-repeat: no-repeat;
@@ -86,6 +101,7 @@ h1 {
   padding-bottom: 15px;
   text-align: center;
 }
+
 .servicios {
   padding: 2rem 0;
 }
@@ -143,25 +159,29 @@ h1 {
   text-align: center;
 
 }
+
 .testimonios .col-md-4 img {
   width: 110px;
   height: 110px;
   border-radius: 100%;
   margin-bottom: 1rem;
 }
-.testimonios .card-header{
+
+.testimonios .card-header {
   background-color: #fda94f;
 
 }
-.parrafotestimonio{
+
+.parrafotestimonio {
   font-size: 19px;
-  color:#C65425;
+  color: #C65425;
 
 }
-.blockquote-footer{
-  color:#000;
+
+.blockquote-footer {
+  color: #000;
   font-size: 16px;
-  padding:10px;
+  padding: 10px;
 }
 
 .testimonios h2 {
@@ -255,21 +275,56 @@ h1 {
 /*NOSOTROS*/
 
 .bannerNosotros {
-    display: flex;
-    justify-content: center;
-    background-image: url(../imagenes/Nosotros.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  color:#f8870e;
-height: 200px;
-padding-top: 50px;
-  padding-bottom: 20px; }
-
-.TextoNosotros .p{
-  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  background-image: url(../imagenes/Nosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: #f8870e;
+  height: 200px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
+
+
+.textoNosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+
+.texto1 {
+  font-family: 'Roboto', sans-serif;
+  color: #2F2A26;
+  text-justify: center;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+.galeriaNosotros {
+  margin-bottom: 3rem;
+  margin-top: 6vw;
+  transition: 1s;
+}
+
+.galeriaNosotros:hover {
+  filter: drop-shadow(0 0.2vh 0.3vh #2F2A26);
+}
+
+.d-block {
+  height: 500px;
+  width: 100%;
+}
+
+
+
 
 /*SERVICIOS*/
 .bannerServicios {
@@ -280,16 +335,19 @@ padding-top: 50px;
   background-position: center;
   background-size: cover;
   height: 200px;
-  color:#f8870e;
+  color: #f8870e;
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
 .productos h3 {
   text-align: center;
   color: #f8870e;
 }
 
 /*HABITACIONES*/
+
+
 #gridHabitaciones {
   display: grid;
   height: 100%;
@@ -338,22 +396,22 @@ padding-top: 50px;
   background-position: center;
   background-size: cover;
   height: 200px;
-  color:#f8870e;
+  color: #f8870e;
   padding-top: 50px;
   padding-bottom: 20px;
 }
-.descripcion {
-  text-align: center;
-  text-justify: center; }
+
+
+
 
 
 .habitacion1,
 .habitacion2,
 .habitacion3 {
-  background-color: #EFEEEA;
+  background-color:cornsilk;
   padding: 1vh;
   margin: 2vh;
-  border: 0.1vh solid #DBC9B8;
+  border: 0.1vh solid #fda94f;
   border-radius: 0.3em;
   display: flex;
   flex-direction: column;
@@ -379,16 +437,6 @@ padding-top: 50px;
   height: 300px;
 }
 
-.habitacion1 .ulmainHabitacion,
-.habitacion2 .ulmainHabitacion,
-.habitacion3 .ulmainHabitacion {
-  list-style-type: circle;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: flex-start;
-  padding-bottom: 10px;
-}
 
 .botonLink {
   text-decoration: none;
@@ -413,10 +461,11 @@ padding-top: 50px;
   background-position: center;
   background-size: cover;
   height: 200px;
-  color:#f8870e;
+  color: #f8870e;
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
 .container {
   max-width: 1170px;
   margin-left: auto;
