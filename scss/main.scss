@@ -73,7 +73,7 @@
         margin-bottom: 20px;
     }
 
-    .container {
+    .contenedor-servicios {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
@@ -308,6 +308,19 @@ footer {
     color: #f8870e;
 }
 
+  /* PAGINA SERVICIOS */
+  .pagina-servicios{
+      background-color: red;
+      article{
+        text-align: center;
+        padding: 1rem;
+        background-color: #f8870e;
+        margin-bottom: 1rem;
+        color:#fff;
+    }
+  }
+  
+
 /*HABITACIONES*/
 
 
@@ -532,7 +545,7 @@ ul {
         font-size: 30px;
     }
 
-    .servicios .container {
+    .servicios .contenedor-servicios {
         grid-template-columns: 1fr;
     }
 
@@ -566,6 +579,15 @@ ul {
         padding: 1rem 0;
         margin-top: 2rem;
     }
+
+    /* PAGINA SERVICIOS */
+    .pagina-servicios article{
+        text-align: center;
+        padding: 1rem;
+        background-color: #f8870e;
+        margin-bottom: 1rem;
+        color:#fff;
+    }
 }
 
 
@@ -588,7 +610,7 @@ ul {
         font-size: 30px;
     }
 
-    .servicios .container {
+    .servicios .contenedor-servicios {
         grid-template-columns: repeat(2, 1fr);
     }
 }
