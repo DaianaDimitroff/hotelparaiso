@@ -1,1 +1,6 @@
-1- Cree la etiqueta meta description, fui agregando 
+- Se agregó meta keywords
+- Se agregó meta description
+- Se comprimió imágenes png y svg
+- Se definieron títulos
+- Se establecieron encabezados
+- Se optimizó contenido textual
