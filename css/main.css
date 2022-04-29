@@ -4,8 +4,11 @@
   padding: 0;
   box-sizing: border-box; }
 
-html body footer {
-  font-family: 'Roboto', sans-serif; }
+header body footer {
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background-color: #EFEEEA; }
 
 a {
   text-decoration: none;
@@ -19,7 +22,7 @@ header {
     header .navbar .navbar-collapse {
       justify-content: center; }
     header .navbar .navbar-brand {
-      color: #f8870e !important;
+      color: #f5ac5e !important;
       font-weight: bold;
       font-size: 30px;
       display: flex;
@@ -40,26 +43,27 @@ header {
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-size: "Montserrat Alternates", sans-serif; }
   .bienvenida .container {
     max-width: 700px; }
     .bienvenida .container .tituloPrincipal {
       text-transform: uppercase;
       font-style: italic;
       font-weight: bold;
-      color: #fff;
+      color: #e7e5e4;
       padding-bottom: 20px;
       margin: 40px auto;
-      font-size: 40px;
-      color: #f8870e;
+      font-size: 42px;
+      color: #f2b675;
       padding-top: 20px;
       padding-bottom: 15px;
       text-align: center; }
     .bienvenida .container .parrafo-principal {
       padding-bottom: 20px;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Montserrat Alternates", sans-serif;
       font-size: 30px;
-      color: #fff;
+      color: #e7e5e4;
       margin: 40px auto; }
     .bienvenida .container .boton-light {
       display: inline-block;
@@ -68,7 +72,7 @@ header {
       padding: 13px 20px;
       border: none;
       cursor: pointer;
-      background: #fda94f; }
+      background: #e7ad6f; }
       .bienvenida .container .boton-light:hover {
         opacity: 0.6; }
 
@@ -77,7 +81,8 @@ header {
   .servicios h2 {
     text-align: center;
     font-size: 40px;
-    text-transform: uppercase;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
     color: #000;
     margin-bottom: 20px; }
   .servicios .contenedor-servicios {
@@ -86,7 +91,7 @@ header {
     gap: 20px; }
     .servicios .contenedor-servicios .service {
       text-align: center;
-      background-color: #fda94fa8;
+      background-color: #f2b675;
       padding: 1rem;
       border-radius: 5px; }
       .servicios .contenedor-servicios .service .service-icon {
@@ -95,8 +100,14 @@ header {
         gap: 10px;
         margin-bottom: 1rem;
         align-items: center; }
+      .servicios .contenedor-servicios .service .subtitulos {
+        font-size: 24px;
+        font-family: "Montserrat Alternates", sans-serif;
+        color: #2e2e2e; }
       .servicios .contenedor-servicios .service .service-content p {
-        margin-bottom: .7rem; }
+        margin-bottom: .7rem;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif; }
       .servicios .contenedor-servicios .service .service-content .btn-mas {
         background-color: beige;
         padding: 0.5rem 0.7rem;
@@ -116,9 +127,10 @@ header {
   background-position: center;
   text-align: center; }
   .testimonios h2 {
-    font-size: 35px;
-    text-transform: uppercase;
-    color: #fff;
+    font-size: 40px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    color: #000;
     padding-top: 25px;
     margin-bottom: 20px; }
   .testimonios .col-md-4 img {
@@ -127,14 +139,16 @@ header {
     border-radius: 100%;
     margin-bottom: 1rem; }
   .testimonios .card .card-header {
-    background-color: #fda94f; }
+    background-color: #EFEEEA; }
   .testimonios .card .card-body .parrafotestimonio {
-    font-size: 19px;
-    color: #C65425; }
+    font-size: 18px;
+    color: #d68a4c;
+    font-family: "Poppins", sans-serif; }
   .testimonios .card .card-body .blockquote-footer {
     color: #000;
     font-size: 16px;
-    padding: 10px; }
+    padding: 10px;
+    font-family: "Poppins", sans-serif; }
 
 /* FOOTER */
 footer .redes-sociales {
@@ -144,10 +158,10 @@ footer .redes-sociales {
   justify-items: center;
   justify-content: center; }
   footer .redes-sociales h4 {
-    color: orange;
+    color: #000;
     text-align: center;
-    text-transform: uppercase;
     margin: 40px auto;
+    font-family: "Montserrat Alternates", sans-serif;
     font-size: 25px; }
   footer .redes-sociales .iconos-redes-sociales {
     display: flex;
@@ -178,20 +192,22 @@ footer .copyright {
     color: #fff;
     margin-bottom: 0;
     font-size: 16px;
+    font-family: "Montserrat Alternates", sans-serif;
     text-align: center; }
 
 /*NOSOTROS*/
 .bannerNosotros {
   display: flex;
   justify-content: center;
-  background-image: url(../imagenes/Nosotros.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: #f8870e;
+  background-color: #f2b675;
+  color: #e7e5e4;
   height: 200px;
+  text-shadow: #0f0d0b 0.1em 0.1em 0.2em;
   padding-top: 50px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 42px;
+  font-weight: 700; }
 
 .textoNosotros {
   display: flex;
@@ -202,7 +218,7 @@ footer .copyright {
   padding-bottom: 50px; }
 
 .texto1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #2F2A26;
   text-justify: center;
   text-align: center;
@@ -226,128 +242,81 @@ footer .copyright {
 .bannerServicios {
   display: flex;
   justify-content: center;
-  background-image: url(../imagenes/fabio-fistarol-qai_Clhyq0s-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #f2b675;
+  color: #e7e5e4;
   height: 200px;
-  color: #f8870e;
+  text-shadow: #0f0d0b 0.1em 0.1em 0.2em;
   padding-top: 50px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 42px;
+  font-weight: 700; }
 
-.productos h3 {
-  text-align: center;
-  color: #f8870e; }
-
-/* PAGINA SERVICIOS */
 .pagina-servicios {
-  background-color: red; }
+  background-color: #EFEEEA; }
   .pagina-servicios article {
     text-align: center;
     padding: 1rem;
-    background-color: #f8870e;
+    background-color: #EFEEEA;
     margin-bottom: 1rem;
-    color: #fff; }
+    color: #000; }
+    .pagina-servicios article .titulos-Servicios {
+      font-size: 23px;
+      color: #000;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif; }
+    .pagina-servicios article .parrafoServicios {
+      font-size: 19px;
+      font-family: "Poppins", sans-serif;
+      color: #2F2A26; }
+    .pagina-servicios article .img-fluid {
+      width: 700px;
+      height: 200px; }
 
 /*HABITACIONES*/
-#gridHabitaciones {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-  row-gap: 0vh;
-  justify-content: space-around;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 25vw auto;
-  grid-template-areas: "banner banner banner" "hab1 hab2 hab3"; }
-
-#gridHabitaciones .bannerHabitaciones {
-  grid-area: banner; }
-
-#gridHabitaciones .habitacion1 {
-  grid-area: hab1;
-  padding: 3vh;
-  margin-bottom: 10vh; }
-
-#gridHabitaciones .habitacion2 {
-  grid-area: hab2;
-  padding: 3vh;
-  margin-bottom: 10vh; }
-
-#gridHabitaciones .habitacion3 {
-  grid-area: hab3;
-  padding: 3vh;
-  margin-bottom: 10vh; }
-
-#gridHabitaciones .imagenHabitaciones {
-  width: 10vw; }
-
 .bannerHabitaciones {
   display: flex;
   justify-content: center;
-  background-image: url(../imagenes/nick-fewings-lRowikzz4cw-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #f2b675;
+  color: #e7e5e4;
   height: 200px;
-  color: #f8870e;
+  text-shadow: #0f0d0b 0.1em 0.1em 0.2em;
   padding-top: 50px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 42px;
+  font-weight: 700; }
 
-.habitacion1,
-.habitacion2,
-.habitacion3 {
-  background-color: cornsilk;
-  padding: 1vh;
-  margin: 2vh;
-  border: 0.1vh solid #fda94f;
-  border-radius: 0.3em;
+.texto-Habitaciones {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: 1s; }
+  padding-top: 40px;
+  padding-bottom: 50px; }
 
-.habitacion1:hover,
-.habitacion2:hover,
-.habitacion3:hover {
-  filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
-
-.habitacion1 .imagenHabitaciones,
-.habitacion2 .imagenHabitaciones,
-.habitacion3 .imagenHabitaciones {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 1vh;
-  border-radius: 0.3em;
-  height: 300px; }
-
-.botonLink {
-  text-decoration: none;
-  font-size: 16px;
+.texto-habitacion {
   font-family: "Poppins", sans-serif;
-  color: #EFEEEA;
-  background-color: #C65425;
-  transition: 1s;
-  display: flex;
-  border: 0.1vh solid #C65425;
-  border-radius: 0.3em;
-  justify-self: center;
-  align-self: center; }
+  color: #2F2A26;
+  text-justify: center;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 10px;
+  font-size: 17px; }
 
 /*CONTACTOS*/
 .bannerContacto {
   display: flex;
   justify-content: center;
-  background-image: url(../imagenes/jason-briscoe--eLfQTmDfLk-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #f2b675;
+  color: #e7e5e4;
   height: 200px;
-  color: #f8870e;
+  text-shadow: #0f0d0b 0.1em 0.1em 0.2em;
   padding-top: 50px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 42px;
+  font-weight: 700; }
 
 .container {
   max-width: 1170px;
@@ -389,10 +358,10 @@ ul {
   background: none;
   outline: 0;
   color: #000;
-  border-bottom: 1px solid #fda94f; }
+  border-bottom: 1px solid #f2b675; }
 
 .contact-form form button {
-  background: #fda94f;
+  background: #f2b675;
   border: 0;
   text-transform: uppercase;
   padding: 1em; }
@@ -406,7 +375,7 @@ ul {
 
 /* CONTACT INFO */
 .contact-info {
-  background: #fda94f;
+  background: #f2b675;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -451,9 +420,9 @@ ul {
   .pagina-servicios article {
     text-align: center;
     padding: 1rem;
-    background-color: #f8870e;
+    background-color: #EFEEEA;
     margin-bottom: 1rem;
-    color: #fff; } }
+    color: #000; } }
 
 /* MEDIAQUERY PARA TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
