@@ -4,15 +4,9 @@
   padding: 0;
   box-sizing: border-box; }
 
-header body footer {
-  font-family: 'Poppins', sans-serif; }
-
 body {
+  font-family: 'Poppins', sans-serif;
   background-color: #EFEEEA; }
-
-a {
-  text-decoration: none;
-  color: #000; }
 
 /* Header  */
 header {
@@ -67,12 +61,12 @@ header {
       margin: 40px auto; }
     .bienvenida .container .boton-light {
       display: inline-block;
-      font-size: 22px;
+      font-size: 20px;
       color: #fff;
       padding: 13px 20px;
-      border: none;
-      cursor: pointer;
-      background: #e7ad6f; }
+      border-radius: 10px;
+      background: #e7ad6f;
+      text-decoration: none; }
       .bienvenida .container .boton-light:hover {
         opacity: 0.6; }
 
@@ -80,7 +74,7 @@ header {
   padding: 2rem 0; }
   .servicios h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 600;
     color: #000;
@@ -115,7 +109,11 @@ header {
         display: block;
         max-width: 100px;
         margin: auto;
-        font-weight: bold; }
+        font-weight: bold;
+        color: #0f0d0b;
+        text-decoration: none;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 15px; }
         .servicios .contenedor-servicios .service .service-content .btn-mas:hover {
           opacity: 0.6; }
 
@@ -127,7 +125,7 @@ header {
   background-position: center;
   text-align: center; }
   .testimonios h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 600;
     color: #000;
@@ -139,11 +137,13 @@ header {
     border-radius: 100%;
     margin-bottom: 1rem; }
   .testimonios .card .card-header {
-    background-color: #EFEEEA; }
+    background-color: #efe8e4; }
   .testimonios .card .card-body .parrafotestimonio {
-    font-size: 18px;
-    color: #d68a4c;
-    font-family: "Poppins", sans-serif; }
+    font-size: 19px;
+    color: #2a2626;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
+    min-height: 300px; }
   .testimonios .card .card-body .blockquote-footer {
     color: #000;
     font-size: 16px;
@@ -151,6 +151,26 @@ header {
     font-family: "Poppins", sans-serif; }
 
 /* FOOTER */
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center; }
+  footer .container .logo-footer {
+    text-align: center; }
+    footer .container .logo-footer a {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #f5ac5e; }
+  footer .container .menu-footer ul {
+    list-style: none;
+    text-align: center; }
+    footer .container .menu-footer ul a {
+      color: #1d1d1c;
+      font-family: "Montserrat Alternates", sans-serif;
+      font-size: 17px;
+      font-weight: 600; }
+
 footer .redes-sociales {
   margin-top: 0px;
   padding-top: 0px;
@@ -160,9 +180,9 @@ footer .redes-sociales {
   footer .redes-sociales h4 {
     color: #000;
     text-align: center;
-    margin: 40px auto;
+    margin: 20px auto;
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: 25px; }
+    font-size: 17px; }
   footer .redes-sociales .iconos-redes-sociales {
     display: flex;
     flex-wrap: wrap;
@@ -171,13 +191,12 @@ footer .redes-sociales {
     margin: 0px; }
     footer .redes-sociales .iconos-redes-sociales a {
       color: navy;
-      /*margin-right: 30px;*/
-      margin-right: 80px;
+      margin-right: 50px;
       margin: 30px;
       margin-top: 0px;
       padding-top: 20px;
       padding-bottom: 15px;
-      font-size: 40px; }
+      font-size: 23px; }
       footer .redes-sociales .iconos-redes-sociales a:hover {
         color: grey;
         transform: scale(1.4);
@@ -216,23 +235,26 @@ footer .copyright {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 50px; }
-
-.texto1 {
-  font-family: "Poppins", sans-serif;
-  color: #2F2A26;
-  text-justify: center;
-  text-align: center;
-  line-height: 1.5;
-  padding-top: 10px;
-  font-size: 17px; }
+  .textoNosotros .titunosotros {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 30px;
+    color: #2F2A26;
+    font-weight: 700; }
+  .textoNosotros .texto1 {
+    font-family: "Poppins", sans-serif;
+    color: #2a2a29;
+    text-justify: center;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 10px;
+    font-size: 17px; }
 
 .galeriaNosotros {
   margin-bottom: 3rem;
   margin-top: 6vw;
   transition: 1s; }
-
-.galeriaNosotros:hover {
-  filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
+  .galeriaNosotros:hover {
+    filter: drop-shadow(0 0.2vh 0.3vh #2F2A26); }
 
 .d-block {
   height: 500px;
@@ -261,17 +283,20 @@ footer .copyright {
     margin-bottom: 1rem;
     color: #000; }
     .pagina-servicios article .titulos-Servicios {
-      font-size: 23px;
-      color: #000;
-      font-weight: 600;
-      font-family: "Poppins", sans-serif; }
+      font-size: 22px;
+      color: #b0acab;
+      font-weight: 700;
+      font-family: "Montserrat Alternates", sans-serif;
+      padding-bottom: 15px; }
     .pagina-servicios article .parrafoServicios {
-      font-size: 19px;
+      font-size: 17px;
       font-family: "Poppins", sans-serif;
-      color: #2F2A26; }
+      color: #2F2A26;
+      padding-bottom: 15px; }
     .pagina-servicios article .img-fluid {
       width: 700px;
-      height: 200px; }
+      height: 200px;
+      object-fit: cover; }
 
 /*HABITACIONES*/
 .bannerHabitaciones {
@@ -294,15 +319,57 @@ footer .copyright {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 50px; }
+  .texto-Habitaciones .tituhabitacion {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 30px;
+    color: #2F2A26;
+    font-weight: 700; }
+  .texto-Habitaciones .parrafo-habitacion {
+    font-family: "Poppins", sans-serif;
+    color: #2F2A26;
+    text-justify: center;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 10px;
+    font-size: 17px; }
 
-.texto-habitacion {
-  font-family: "Poppins", sans-serif;
-  color: #2F2A26;
-  text-justify: center;
-  text-align: center;
-  line-height: 1.5;
-  padding-top: 10px;
-  font-size: 17px; }
+.imagenHabitaciones {
+  width: 460px;
+  object-fit: cover;
+  height: 320px; }
+
+.habitaciones-info .habitacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3rem 0; }
+  .habitaciones-info .habitacion .info {
+    text-align: center; }
+    .habitaciones-info .habitacion .info .tipohabitacion {
+      font-size: 22px;
+      color: #b0acab;
+      font-weight: 700;
+      font-family: "Montserrat Alternates", sans-serif; }
+    .habitaciones-info .habitacion .info ul {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+      color: #2F2A26;
+      list-style: none;
+      padding: 0; }
+      .habitaciones-info .habitacion .info ul li {
+        margin-bottom: .5rem; }
+    .habitaciones-info .habitacion .info a {
+      display: block;
+      max-width: 160px;
+      margin: 1rem auto;
+      background-color: #f2b675;
+      padding: 1rem;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none; }
+
+.habitaciones-info .habitacion:nth-child(2) img {
+  order: 2; }
 
 /*CONTACTOS*/
 .bannerContacto {
@@ -316,75 +383,58 @@ footer .copyright {
   padding-bottom: 20px;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 42px;
-  font-weight: 700; }
-
-.container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em; }
-
-ul {
-  list-style: none;
-  padding: 0; }
+  font-weight: 700;
+  margin-bottom: 48px; }
 
 .contacto .container {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  .contacto .container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .contacto .container form label {
+      display: block; }
+    .contacto .container form p {
+      margin: 0;
+      padding: 1em; }
+    .contacto .container form .block {
+      grid-column: 1 / 3; }
+    .contacto .container form button,
+    .contacto .container form input,
+    .contacto .container form textarea {
+      width: 100%;
+      padding: .7em;
+      border: none;
+      background: none;
+      outline: 0;
+      color: #000;
+      border-bottom: 1px solid #f2b675; }
+    .contacto .container form button {
+      background: #f2b675;
+      border: 0;
+      text-transform: uppercase;
+      padding: 1em; }
+      .contacto .container form button:hover, .contacto .container form button:focus {
+        background: #100c09;
+        color: #fff;
+        transition: background-color 1s ease-out;
+        outline: 0; }
 
-.contact-form {
-  background: #fff; }
-
-.contact-form form {
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
-
-.contact-form form label {
-  display: block; }
-
-.contact-form form p {
-  margin: 0;
-  padding: 1em; }
-
-.contact-form form .block {
-  grid-column: 1 / 3; }
-
-.contact-form form button,
-.contact-form form input,
-.contact-form form textarea {
-  width: 100%;
-  padding: .7em;
-  border: none;
-  background: none;
-  outline: 0;
-  color: #000;
-  border-bottom: 1px solid #f2b675; }
-
-.contact-form form button {
-  background: #f2b675;
-  border: 0;
-  text-transform: uppercase;
-  padding: 1em; }
-
-.contact-form form button:hover,
-.contact-form form button:focus {
-  background: #fda94f;
-  color: #fff;
-  transition: background-color 1s ease-out;
-  outline: 0; }
-
-/* CONTACT INFO */
 .contact-info {
   background: #f2b675;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-
-.contact-info h4,
-.contact-info ul,
-.contact-info p {
-  text-align: center;
-  margin: 0 0 1rem 0; }
+  .contact-info ul {
+    list-style: none;
+    padding: 0; }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px; }
 
 @media screen and (max-width: 767px) {
   /* PAGINA INDEX */
@@ -397,6 +447,8 @@ ul {
     grid-column: 8/9; }
   header .menu-bar i {
     font-size: 30px; }
+  .footer .container {
+    grid-template-columns: 1fr; }
   .servicios .contenedor-servicios {
     grid-template-columns: 1fr; }
   .servicios .service h3 {
@@ -422,7 +474,12 @@ ul {
     padding: 1rem;
     background-color: #EFEEEA;
     margin-bottom: 1rem;
-    color: #000; } }
+    color: #000; }
+  /* PAGINA HABITACIONES */
+  .habitaciones-info .habitacion {
+    display: block; }
+    .habitaciones-info .habitacion .info {
+      margin-top: 2rem; } }
 
 /* MEDIAQUERY PARA TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -435,5 +492,8 @@ ul {
     grid-column: 8/9; }
   header .menu-bar i {
     font-size: 30px; }
+  /* PAGINA SERVICIOS*/
   .servicios .contenedor-servicios {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .pagina-servicios .parrafoServicios {
+    min-height: 450px; } }

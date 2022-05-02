@@ -4,9 +4,6 @@
 @import "header";
 
 
-
-
-
 /* INDEX  */
 .bienvenida {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../imagenes/imagenprincipalindex.jpg") center/cover no-repeat;
@@ -48,12 +45,12 @@
 
         .boton-light {
             display: inline-block;
-            font-size: 22px;
+            font-size: 20px;
             color: #fff;
             padding: 13px 20px;
-            border: none;
-            cursor: pointer;
+            border-radius: 10px;
             background: #e7ad6f;
+            text-decoration: none;
 
             &:hover {
                 opacity: 0.6;
@@ -68,7 +65,7 @@
 
     h2 {
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
         font-family: $fuenteTitulos;
         font-weight: 600;
         color: #000;
@@ -97,7 +94,7 @@
             .subtitulos {
                 font-size: 24px;
                 font-family: $fuenteTitulos;
-                color:#2e2e2e;
+                color: #2e2e2e;
             }
 
             .service-content {
@@ -116,6 +113,10 @@
                     max-width: 100px;
                     margin: auto;
                     font-weight: bold;
+                    color: #0f0d0b;
+                    text-decoration: none;
+                    font-family: $fuenteTitulos;
+                    font-size: 15px;
 
                     &:hover {
                         opacity: 0.6;
@@ -132,9 +133,6 @@
 
 
 
-
-
-
 /* TESTIMONIOS  */
 .testimonios {
     background: url(../imagenes/playa.jpg);
@@ -144,13 +142,12 @@
     text-align: center;
 
     h2 {
-        font-size: 40px;
+        font-size: 30px;
         font-family: $fuenteTitulos;
         font-weight: 600;
         color: #000;
         padding-top: 25px;
         margin-bottom: 20px;
-
     }
 
     .col-md-4 img {
@@ -162,15 +159,16 @@
 
     .card {
         .card-header {
-            background-color: #EFEEEA;
+            background-color: #efe8e4;
         }
 
         .card-body {
             .parrafotestimonio {
-                font-size: 18px;
-                color: #d68a4c;
+                font-size: 19px;
+                color: #2a2626;
+                font-weight: 200;
                 font-family: $fuenteTextos;
-
+                min-height: 300px;
             }
 
             .blockquote-footer {
@@ -189,6 +187,37 @@
 
 /* FOOTER */
 footer {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+
+        .logo-footer {
+            text-align: center;
+
+            a {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                color: #f5ac5e;
+            }
+        }
+
+        .menu-footer {
+            ul {
+                list-style: none;
+                text-align: center;
+
+                a {
+                    color: #1d1d1c;
+                    font-family: $fuenteTitulos;
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
     .redes-sociales {
         margin-top: 0px;
         padding-top: 0px;
@@ -199,9 +228,9 @@ footer {
         h4 {
             color: #000;
             text-align: center;
-            margin: 40px auto;
+            margin: 20px auto;
             font-family: $fuenteTitulos;
-            font-size: 25px;
+            font-size: 17px;
         }
 
         .iconos-redes-sociales {
@@ -213,13 +242,12 @@ footer {
 
             a {
                 color: navy;
-                /*margin-right: 30px;*/
-                margin-right: 80px;
+                margin-right: 50px;
                 margin: 30px;
                 margin-top: 0px;
                 padding-top: 20px;
                 padding-bottom: 15px;
-                font-size: 40px;
+                font-size: 23px;
 
                 &:hover {
                     color: grey;
@@ -276,27 +304,35 @@ footer {
     align-items: center;
     padding-top: 40px;
     padding-bottom: 50px;
-}
+
+    .titunosotros {
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 30px;
+        color: #2F2A26;
+        font-weight: 700;
+    }
 
 
 .texto1 {
     font-family: $fuenteTextos;
-    color: #2F2A26;
+    color: #2a2a29;
     text-justify: center;
     text-align: center;
     line-height: 1.5;
     padding-top: 10px;
     font-size: 17px;
 }
+}
+
 
 .galeriaNosotros {
     margin-bottom: 3rem;
     margin-top: 6vw;
     transition: 1s;
-}
 
-.galeriaNosotros:hover {
-    filter: drop-shadow(0 0.2vh 0.3vh #2F2A26);
+    &:hover {
+        filter: drop-shadow(0 0.2vh 0.3vh #2F2A26);
+    }
 }
 
 .d-block {
@@ -334,21 +370,24 @@ footer {
         color: #000;
 
         .titulos-Servicios {
-            font-size: 23px;
-            color: #000;
-            font-weight: 600;
-            font-family: "Poppins", sans-serif;
+            font-size: 22px;
+            color: #b0acab;
+            font-weight: 700;
+            font-family: $fuenteTitulos;
+            padding-bottom: 15px;
         }
 
         .parrafoServicios {
-            font-size: 19px;
-            font-family: "Poppins", sans-serif;
+            font-size: 17px;
+            font-family: $fuenteTextos;
             color: #2F2A26;
+            padding-bottom: 15px;
         }
 
         .img-fluid {
             width: 700px;
             height: 200px;
+            object-fit: cover;
         }
     }
 }
@@ -375,19 +414,79 @@ footer {
     align-items: center;
     padding-top: 40px;
     padding-bottom: 50px;
+
+    .tituhabitacion {
+        font-family: $fuenteTitulos;
+        font-size: 30px;
+        color: #2F2A26;
+        font-weight: 700;
+    }
+
+    .parrafo-habitacion {
+        font-family: $fuenteTextos;
+        color: #2F2A26;
+        text-justify: center;
+        text-align: center;
+        line-height: 1.5;
+        padding-top: 10px;
+        font-size: 17px;
+    }
 }
 
 
-.texto-habitacion {
-    font-family: $fuenteTextos;
-    color: #2F2A26;
-    text-justify: center;
-    text-align: center;
-    line-height: 1.5;
-    padding-top: 10px;
-    font-size: 17px;
+.imagenHabitaciones {
+    width: 460px;
+    object-fit: cover;
+    height: 320px;
+
 }
 
+.habitaciones-info {
+    .habitacion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 3rem 0;
+
+        .info {
+            text-align: center;
+
+            .tipohabitacion {
+                font-size: 22px;
+                color: #b0acab;
+                font-weight: 700;
+                font-family: $fuenteTitulos;
+            }
+
+            ul {
+                font-family: $fuenteTextos;
+                font-size: 16px;
+                font-weight: 200;
+                color: #2F2A26;
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: .5rem;
+                }
+            }
+
+            a {
+                display: block;
+                max-width: 160px;
+                margin: 1rem auto;
+                background-color: #f2b675;
+                padding: 1rem;
+                color: #fff;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .habitacion:nth-child(2) img {
+        order: 2;
+    }
+}
 
 /*CONTACTOS*/
 .bannerContacto {
@@ -402,89 +501,82 @@ footer {
     font-family: $fuenteTitulos;
     font-size: 42px;
     font-weight: 700;
+    margin-bottom: 48px;
 }
 
-.container {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
+.contacto {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           
+            label {
+                display: block;
+            }
+
+            p {
+                margin: 0;
+                padding: 1em;
+            }
+
+            .block {
+                grid-column: 1 / 3;
+            }
+
+            button,
+            input,
+            textarea {
+                width: 100%;
+                padding: .7em;
+                border: none;
+                background: none;
+                outline: 0;
+                color: #000;
+                border-bottom: 1px solid #f2b675;
+
+            }
+
+            button {
+                background: #f2b675;
+                border: 0;
+                text-transform: uppercase;
+                padding: 1em;
+
+                &:hover,
+                &:focus {
+                    background: #100c09;
+                    color: #fff;
+                    transition: background-color 1s ease-out;
+                    outline: 0;
+
+                }
+            }
+        }
+    }
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-
-
-.contacto .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contact-form {
-    background: #fff;
-}
-
-.contact-form form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contact-form form label {
-    display: block;
-}
-
-.contact-form form p {
-    margin: 0;
-    padding: 1em;
-}
-
-.contact-form form .block {
-    grid-column: 1 / 3;
-}
-
-.contact-form form button,
-.contact-form form input,
-.contact-form form textarea {
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: #000;
-    border-bottom: 1px solid #f2b675;
-}
-
-.contact-form form button {
-    background: #f2b675;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-}
-
-.contact-form form button:hover,
-.contact-form form button:focus {
-    background: #fda94f;
-    color: #fff;
-    transition: background-color 1s ease-out;
-    outline: 0;
-}
-
-/* CONTACT INFO */
 .contact-info {
     background: #f2b675;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
 
-.contact-info h4,
-.contact-info ul,
-.contact-info p {
-    text-align: center;
-    margin: 0 0 1rem 0;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    h4,
+    ul,
+    p {
+        text-align: center;
+        margin: 0 0 1rem 0;
+        font-family: $fuenteTextos;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -505,6 +597,10 @@ ul {
 
     header .menu-bar i {
         font-size: 30px;
+    }
+
+    .footer .container {
+        grid-template-columns: 1fr;
     }
 
     .servicios .contenedor-servicios {
@@ -551,6 +647,16 @@ ul {
         color: #000;
     }
 
+    /* PAGINA HABITACIONES */
+    .habitaciones-info {
+        .habitacion {
+            display: block;
+
+            .info {
+                margin-top: 2rem;
+            }
+        }
+    }
 }
 
 
@@ -573,7 +679,16 @@ ul {
         font-size: 30px;
     }
 
+    /* PAGINA SERVICIOS*/
     .servicios .contenedor-servicios {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .pagina-servicios {
+        .parrafoServicios {
+            min-height: 450px;
+        }
+    }
+
+
 }
