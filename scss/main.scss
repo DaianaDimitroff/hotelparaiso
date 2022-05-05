@@ -186,11 +186,13 @@
 
 
 /* FOOTER */
-footer {
+.footer{
+    background-color: #fceed8f2;
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
+        
 
         .logo-footer {
             text-align: center;
@@ -199,7 +201,8 @@ footer {
                 text-align: center;
                 font-size: 30px;
                 font-weight: bold;
-                color: #f5ac5e;
+                color: #f6a247;
+                font-weight: 700;
             }
         }
 
@@ -689,6 +692,5 @@ footer {
             min-height: 450px;
         }
     }
-
 
 }

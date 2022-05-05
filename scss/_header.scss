@@ -1,25 +1,26 @@
 /* Header  */
 header {
-    background-color: #C65425, ;
-
+    
     .navbar {
         width: 100%;
-
-        .navbar-collapse {
-            justify-content: center;
-        }
-
+        background-color: #efe8e4!important;
+        
         .navbar-brand {
-            color: $colorPrincipal!important;
+            color: $colorPrincipal;
             font-weight: bold;
             font-size: 30px;
             display: flex;
             padding-left: 20px;
         }
-
+        .navbar-collapse {
+            justify-content: center;
+        }
+    
         .nav-link {
             color: #C65425;
             font-size: 23px;
+            font-family: $fuenteTitulos;
+            font-weight: 300;
 
             &:hover {
                 color: #fda94f !important;

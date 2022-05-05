@@ -9,23 +9,24 @@ body {
   background-color: #EFEEEA; }
 
 /* Header  */
-header {
-  background-color: #C65425; }
-  header .navbar {
-    width: 100%; }
-    header .navbar .navbar-collapse {
-      justify-content: center; }
-    header .navbar .navbar-brand {
-      color: #f5ac5e !important;
-      font-weight: bold;
-      font-size: 30px;
-      display: flex;
-      padding-left: 20px; }
-    header .navbar .nav-link {
-      color: #C65425;
-      font-size: 23px; }
-      header .navbar .nav-link:hover {
-        color: #fda94f !important; }
+header .navbar {
+  width: 100%;
+  background-color: #efe8e4 !important; }
+  header .navbar .navbar-brand {
+    color: #f5ac5e;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    padding-left: 20px; }
+  header .navbar .navbar-collapse {
+    justify-content: center; }
+  header .navbar .nav-link {
+    color: #C65425;
+    font-size: 23px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300; }
+    header .navbar .nav-link:hover {
+      color: #fda94f !important; }
 
 /* INDEX  */
 .bienvenida {
@@ -151,68 +152,69 @@ header {
     font-family: "Poppins", sans-serif; }
 
 /* FOOTER */
-footer .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center; }
-  footer .container .logo-footer {
-    text-align: center; }
-    footer .container .logo-footer a {
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      color: #f5ac5e; }
-  footer .container .menu-footer ul {
-    list-style: none;
-    text-align: center; }
-    footer .container .menu-footer ul a {
-      color: #1d1d1c;
-      font-family: "Montserrat Alternates", sans-serif;
-      font-size: 17px;
-      font-weight: 600; }
-
-footer .redes-sociales {
-  margin-top: 0px;
-  padding-top: 0px;
-  text-align: center;
-  justify-items: center;
-  justify-content: center; }
-  footer .redes-sociales h4 {
-    color: #000;
-    text-align: center;
-    margin: 20px auto;
-    font-family: "Montserrat Alternates", sans-serif;
-    font-size: 17px; }
-  footer .redes-sociales .iconos-redes-sociales {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.footer {
+  background-color: #fceed8f2; }
+  .footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center; }
+    .footer .container .logo-footer {
+      text-align: center; }
+      .footer .container .logo-footer a {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #f6a247;
+        font-weight: 700; }
+    .footer .container .menu-footer ul {
+      list-style: none;
+      text-align: center; }
+      .footer .container .menu-footer ul a {
+        color: #1d1d1c;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 17px;
+        font-weight: 600; }
+  .footer .redes-sociales {
+    margin-top: 0px;
     padding-top: 0px;
-    margin: 0px; }
-    footer .redes-sociales .iconos-redes-sociales a {
-      color: navy;
-      margin-right: 50px;
-      margin: 30px;
-      margin-top: 0px;
-      padding-top: 20px;
-      padding-bottom: 15px;
-      font-size: 23px; }
-      footer .redes-sociales .iconos-redes-sociales a:hover {
-        color: grey;
-        transform: scale(1.4);
-        transition: all 0.5s; }
-
-footer .copyright {
-  background-color: #000;
-  text-align: center;
-  justify-content: center;
-  padding: 1rem 0; }
-  footer .copyright .copyright-text {
-    color: #fff;
-    margin-bottom: 0;
-    font-size: 16px;
-    font-family: "Montserrat Alternates", sans-serif;
-    text-align: center; }
+    text-align: center;
+    justify-items: center;
+    justify-content: center; }
+    .footer .redes-sociales h4 {
+      color: #000;
+      text-align: center;
+      margin: 20px auto;
+      font-family: "Montserrat Alternates", sans-serif;
+      font-size: 17px; }
+    .footer .redes-sociales .iconos-redes-sociales {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 0px;
+      margin: 0px; }
+      .footer .redes-sociales .iconos-redes-sociales a {
+        color: navy;
+        margin-right: 50px;
+        margin: 30px;
+        margin-top: 0px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        font-size: 23px; }
+        .footer .redes-sociales .iconos-redes-sociales a:hover {
+          color: grey;
+          transform: scale(1.4);
+          transition: all 0.5s; }
+  .footer .copyright {
+    background-color: #000;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 0; }
+    .footer .copyright .copyright-text {
+      color: #fff;
+      margin-bottom: 0;
+      font-size: 16px;
+      font-family: "Montserrat Alternates", sans-serif;
+      text-align: center; }
 
 /*NOSOTROS*/
 .bannerNosotros {
