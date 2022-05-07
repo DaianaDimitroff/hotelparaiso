@@ -181,13 +181,14 @@
 }
 
 /* FOOTER */
-.footer{
+.footer {
     background-color: #fceed8f2;
+
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
-        
+
         .logo-footer {
             text-align: center;
 
@@ -303,15 +304,15 @@
         font-weight: 700;
     }
 
-.texto1 {
-    font-family: $fuenteTextos;
-    color: #2a2a29;
-    text-justify: center;
-    text-align: center;
-    line-height: 1.5;
-    padding-top: 10px;
-    font-size: 18px;
-}
+    .texto1 {
+        font-family: $fuenteTextos;
+        color: #2a2a29;
+        text-justify: center;
+        text-align: center;
+        line-height: 1.5;
+        padding-top: 10px;
+        font-size: 18px;
+    }
 }
 
 .galeriaNosotros {
@@ -497,7 +498,7 @@
         form {
             display: grid;
             grid-template-columns: 1fr 1fr;
-           
+
             label {
                 display: block;
             }
@@ -583,8 +584,22 @@
         font-size: 30px;
     }
 
-    header .nav-link{
+    header .nav-link {
         text-align: center;
+    }
+
+    .tituloPrincipal {
+        font-size: 25px;
+
+    }
+
+    .parrafo-principal {
+        font-size: 15px;
+
+    }
+
+    .boton-light {
+        font-size: 12px;
     }
 
     .footer .container {
@@ -596,27 +611,58 @@
     }
 
     .servicios .service h3 {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .servicios .service p {
-        font-size: 22px;
+        font-size: 17px;
         margin-bottom: 1.5rem;
     }
 
     .servicios .service a {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .testimonios .container {
         grid-template-columns: 1fr;
     }
 
+    .testimonios h2 {
+        font-size: 20px;
+    }
+
+    .parrafotestimonio {
+        font-size: 17px;
+    }
+
     .testimonios .testimonial-content {
-        font-size: 22px;
+        font-size: 17px;
+    }
+
+    .blockquote-footer {
+        font-size: 15px;
+    }
+
+    /* PAGINA NOSOTROS */
+    .bannerNosotros {
+        font-size: 25px;
+        height: 100px;
+    }
+
+    .titunosotros {
+        font-size: 25px;
+    }
+
+    .texto1 {
+        font-size: 15px;
     }
 
     /* PAGINA CONTACTO */
+    .bannerContacto {
+        font-size: 25px;
+        height: 100px;
+    }
+
     .contacto .container {
         grid-template-columns: 1fr;
     }
@@ -624,9 +670,15 @@
     .contacto .contact-info {
         padding: 1rem 0;
         margin-top: 2rem;
+        font-size: 15px;
     }
 
     /* PAGINA SERVICIOS */
+    .bannerServicios {
+        font-size: 25px;
+        height: 100px;
+    }
+
     .pagina-servicios article {
         text-align: center;
         padding: 1rem;
@@ -635,18 +687,43 @@
         color: #000;
     }
 
+    .titulos-Servicios {
+        font-size: 17px;
+    }
+
+    .parrafoServicios {
+        font-size: 15px;
+    }
+
     /* PAGINA HABITACIONES */
+    .bannerHabitaciones {
+        font-size: 25px;
+        height: 100px;
+    }
+
+    .tituhabitacion {
+        font-size: 20px
+    }
+
+    .tipohabitacion {
+        font-size: 18px;
+    }
+
+    .texto-Habitaciones {
+        font-size: 15px;
+    }
+
     .habitaciones-info {
         .habitacion {
             display: block;
 
             .info {
                 margin-top: 2rem;
+                font-size: 15px;
             }
         }
     }
 }
-
 
 /* MEDIAQUERY PARA TABLETS */
 @media screen and (min-width: 768px) and (max-width:1023px) {
