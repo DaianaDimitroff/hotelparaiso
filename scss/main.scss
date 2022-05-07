@@ -315,20 +315,27 @@
     }
 }
 
-.galeriaNosotros {
-    margin-bottom: 3rem;
-    margin-top: 6vw;
-    transition: 1s;
+    .galeriaNosotros {
+        margin-bottom: 3rem;
+        margin-top: 6vw;
+        transition: 1s;
 
-    &:hover {
-        filter: drop-shadow(0 0.2vh 0.3vh #2F2A26);
+        &:hover {
+            filter: drop-shadow(0 0.2vh 0.3vh #2F2A26);
+        }
     }
-}
 
-.d-block {
-    height: 500px;
-    width: 100%;
-}
+    .carousel-caption {
+        font-size: 19px;
+        font-family: $fuenteTextos;
+    }
+    .carousel-item{
+        .d-block{
+            height: 500px;
+            width: 100%;
+        }
+    }
+    
 
 /*SERVICIOS*/
 .bannerServicios {
@@ -588,6 +595,10 @@
         text-align: center;
     }
 
+    header .navbar .navbar-brand {
+        font-size: 20px;
+    }
+
     .tituloPrincipal {
         font-size: 25px;
 
@@ -647,20 +658,43 @@
     .bannerNosotros {
         font-size: 25px;
         height: 100px;
+        padding-top: 30px;
     }
-
+    .textoNosotros{
+        justify-content: center;
+    align-items: center;
     .titunosotros {
         font-size: 25px;
+        font-family: "Montserrat Alternates", sans-serif;
+        color: #2F2A26;
+        font-weight: 500;
     }
-
     .texto1 {
+        font-family: $fuenteTextos;
+        text-justify: center;
+        text-align: center;
+        line-height: 1.2;
+        padding-top: 10px;
         font-size: 15px;
+    }
+}
+
+.carousel-item{
+    .d-block{
+        height: 200px;
+        width: 95%;
+    }
+}
+    .carousel-caption {
+        font-size: 16px;
+        font-family: $fuenteTextos;
     }
 
     /* PAGINA CONTACTO */
     .bannerContacto {
         font-size: 25px;
         height: 100px;
+        padding-top: 30px;
     }
 
     .contacto .container {
@@ -677,6 +711,7 @@
     .bannerServicios {
         font-size: 25px;
         height: 100px;
+        padding-top: 30px;
     }
 
     .pagina-servicios article {
@@ -685,32 +720,37 @@
         background-color: #EFEEEA;
         margin-bottom: 1rem;
         color: #000;
+        .titulos-Servicios{
+            font-size: 17px;
+        }
+        .parrafoServicios {
+            font-size: 15px;
+        }
     }
 
-    .titulos-Servicios {
-        font-size: 17px;
-    }
 
-    .parrafoServicios {
-        font-size: 15px;
-    }
 
     /* PAGINA HABITACIONES */
     .bannerHabitaciones {
         font-size: 25px;
         height: 100px;
+        padding-top: 30px;
     }
 
-    .tituhabitacion {
+    .texto-Habitaciones .tituhabitacion {
         font-size: 20px
     }
 
-    .tipohabitacion {
-        font-size: 18px;
+    .texto-Habitaciones .parrafo-habitacion {
+        font-size: 15px;
     }
 
-    .texto-Habitaciones {
-        font-size: 15px;
+    .habitaciones-info .habitacion .info .tipohabitacion {
+        font-size: 17px;
+    }
+
+    .habitaciones-info .habitacion .info ul li {
+        font-size: 14px;
     }
 
     .habitaciones-info {
@@ -720,6 +760,12 @@
             .info {
                 margin-top: 2rem;
                 font-size: 15px;
+
+                a {
+                    font-size: 14px;
+                    max-width: 100px;
+                    padding: 0.3rem;
+                }
             }
         }
     }
