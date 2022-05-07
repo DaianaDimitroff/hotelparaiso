@@ -15,15 +15,21 @@ header {
         .navbar-collapse {
             justify-content: center;
         }
-    
+    .nav-item{
+        margin-right: 1rem;
+    }
         .nav-link {
-            color: #C65425;
-            font-size: 23px;
+            display: block;
+            color: #000;
+            font-size: 18px;
             font-family: $fuenteTitulos;
             font-weight: 300;
+            transition: all .4s ease;
+            padding: 0.5rem;
 
             &:hover {
                 color: #fda94f !important;
+                transform: scale(1.2);
             }
         }
 

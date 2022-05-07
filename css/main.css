@@ -20,13 +20,19 @@ header .navbar {
     padding-left: 20px; }
   header .navbar .navbar-collapse {
     justify-content: center; }
+  header .navbar .nav-item {
+    margin-right: 1rem; }
   header .navbar .nav-link {
-    color: #C65425;
-    font-size: 23px;
+    display: block;
+    color: #000;
+    font-size: 18px;
     font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 300; }
+    font-weight: 300;
+    transition: all .4s ease;
+    padding: 0.5rem; }
     header .navbar .nav-link:hover {
-      color: #fda94f !important; }
+      color: #fda94f !important;
+      transform: scale(1.2); }
 
 /* INDEX  */
 .bienvenida {
@@ -49,7 +55,7 @@ header .navbar {
       color: #e7e5e4;
       padding-bottom: 20px;
       margin: 40px auto;
-      font-size: 42px;
+      font-size: 35px;
       color: #f2b675;
       padding-top: 20px;
       padding-bottom: 15px;
@@ -57,12 +63,12 @@ header .navbar {
     .bienvenida .container .parrafo-principal {
       padding-bottom: 20px;
       font-family: "Montserrat Alternates", sans-serif;
-      font-size: 30px;
+      font-size: 25px;
       color: #e7e5e4;
       margin: 40px auto; }
     .bienvenida .container .boton-light {
       display: inline-block;
-      font-size: 20px;
+      font-size: 17px;
       color: #fff;
       padding: 13px 20px;
       border-radius: 10px;
@@ -96,12 +102,12 @@ header .navbar {
         margin-bottom: 1rem;
         align-items: center; }
       .servicios .contenedor-servicios .service .subtitulos {
-        font-size: 24px;
+        font-size: 20px;
         font-family: "Montserrat Alternates", sans-serif;
         color: #2e2e2e; }
       .servicios .contenedor-servicios .service .service-content p {
         margin-bottom: .7rem;
-        font-size: 20px;
+        font-size: 17px;
         font-family: "Poppins", sans-serif; }
       .servicios .contenedor-servicios .service .service-content .btn-mas {
         background-color: beige;
@@ -140,11 +146,11 @@ header .navbar {
   .testimonios .card .card-header {
     background-color: #efe8e4; }
   .testimonios .card .card-body .parrafotestimonio {
-    font-size: 19px;
+    font-size: 18px;
     color: #2a2626;
     font-weight: 200;
     font-family: "Poppins", sans-serif;
-    min-height: 300px; }
+    min-height: 200px; }
   .testimonios .card .card-body .blockquote-footer {
     color: #000;
     font-size: 16px;
@@ -227,7 +233,7 @@ header .navbar {
   padding-top: 50px;
   padding-bottom: 20px;
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700; }
 
 .textoNosotros {
@@ -249,7 +255,7 @@ header .navbar {
     text-align: center;
     line-height: 1.5;
     padding-top: 10px;
-    font-size: 17px; }
+    font-size: 18px; }
 
 .galeriaNosotros {
   margin-bottom: 3rem;
@@ -273,7 +279,7 @@ header .navbar {
   padding-top: 50px;
   padding-bottom: 20px;
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700; }
 
 .pagina-servicios {
@@ -311,7 +317,7 @@ header .navbar {
   padding-top: 50px;
   padding-bottom: 20px;
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700; }
 
 .texto-Habitaciones {
@@ -384,7 +390,7 @@ header .navbar {
   padding-top: 50px;
   padding-bottom: 20px;
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 48px; }
 
@@ -414,7 +420,6 @@ header .navbar {
     .contacto .container form button {
       background: #f2b675;
       border: 0;
-      text-transform: uppercase;
       padding: 1em; }
       .contacto .container form button:hover, .contacto .container form button:focus {
         background: #100c09;
@@ -436,7 +441,7 @@ header .navbar {
     text-align: center;
     margin: 0 0 1rem 0;
     font-family: "Poppins", sans-serif;
-    font-size: 18px; }
+    font-size: 17px; }
 
 @media screen and (max-width: 767px) {
   /* PAGINA INDEX */
@@ -449,6 +454,8 @@ header .navbar {
     grid-column: 8/9; }
   header .menu-bar i {
     font-size: 30px; }
+  header .nav-link {
+    text-align: center; }
   .footer .container {
     grid-template-columns: 1fr; }
   .servicios .contenedor-servicios {
